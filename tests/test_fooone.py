@@ -24,7 +24,7 @@ class TestLogind(dbusmock.DBusTestCase):
     def test_fooone(self):
         (self.p_mock, obj_logind) = self.spawn_server_template('logind', {}, stdout=subprocess.PIPE)
         x = dbusmockfoo.fooone.FooOne()
-	r = x.numsessions()
+        r = x.numsessions()
         self.assertTrue(x)
-	self.assertTrue(r == 0)
+        self.assertTrue(r == 0)
 
